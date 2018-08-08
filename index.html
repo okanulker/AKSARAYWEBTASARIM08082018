@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> <!-- TR karakter sorununu çözen kod -->
+	<title>BURDUR GENÇLİK MERKEZİ</title>
+	<link rel="stylesheet" type="text/css" href="stil.css"> <!-- cssden kodları çekmek için kod. örn stilcssden blok1i aldık kodları sonda -->
+</head>
+<body>
+	Okan ÜLKER
+	<br>					<!--Alt Satıra Geçe Kodu-->
+	<b>Kalınlık Kodu</b>
+	<br>
+	<i>Eğik İtalik Yazı Kodu</i>
+	<br>
+	<b><i>Hem Kalın Hem İtalik Yazma Kodu</i></b>
+	<br>
+	<u>Altı çizili yazı yazma kodu</u> <!--altı çizili yazı kodu-->
+	<br>
+	<s>99,99 TL</s> <!--ortası çizili yazı kodu-->
+	<br>
+	<s>99,99 </s>TL <!--sadece rakamı çizili TLsi normal yazı-->
+	<br>
+	<h1>EN BÜYÜK BAŞLIK</h1>
+	<h1 class="ortala2">ŞİMDİ AMERİKA DÜŞÜNSÜN</h1> <!--BÜYÜK BAŞLIK için satırı kaplar-->
+	<h2>2.NUMARALI BAŞLIK</h2>
+	<h3>3.NUMARALI BAŞLIK</h3>
+	<h4>4.NUMARALI BAŞLIK</h4>
+	<h5>5.NUMARALI BAŞLIK</h5>
+	<h6>EN KÜÇÜK BAŞLIK</h6><!--br yazmaya gerek kalmadan alta geçer-->
+	&emsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <p class="ortala">&emsp;Duis aute irure dolor in reprehenderit in voluptate &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> <!--boşluk algılamaz rengi farklı kod ile boşluk bırakabiliriz, en baştaki paragraf girintisi vermektedir.p ile olan alıp başka paragraf baslatır sonraki kodla boşluk verilir-->
+	<abbr title="Türk Dil Kurumu">TDK</abbr>
+	<br>
+	4<sub>2</sub> <!--Sayının taban sayısı yazayı sağlar-->
+	<br>
+	<abbr title="5 üssü 2">5<sup>2</sup>=25</abbr> <!--üstü ile açıklama yazılması-->
+	<br>
+	<img width="70%" height="400" src="dogam.jpg">
+	<br>
+	<br>
+	<img width="70%" height="400" src="dogam2.jpg">
+	<!--width genişliği yüzde ile gösterir, height yüksekliği deger olarak gösterir-->
+	<hr> <!--satır boyunca ince bir çizgi çeker-->
+	<a target="_blank" href="http://www.gsb.gov.tr">
+		Resmi Siteye Gitmek İçin Tıklayınız</a> <!--gidilecek sitenin adını yazarız, target blank ile site yeni sekmede açılır-->
+		<br>
+		<a target="_blank" href="http://www.gsb.gov.tr">
+		<img width="70%" height="400" src="dogam.jpg"></a> <!--gidilecek sitenin adını yazarız, target blank ile site yeni sekmede açılır-->
+		<br>
+		<a target="_blank" href="dogam.jpg">
+		<img width="70%" height="400" src="dogam.jpg"></a> <!--fotodan link verilir-->
+		<br>
+		<span style="font-family: Comic Sans; font-size: 24px; color: darkblue "><b>GENÇLİK MERKEZİMİZE HOŞGELDİNİZ BİZ SİZİNLE BÜYÜK BİR AİLEYİZ</b></span>  <!--alt yazının boyutu rengi yazı tipi ayarlanabilir, renk kodları da yazarak yazıyı renklendirebiliriz ayrıca yazının başına b ekleyerek kalınlaşması sağlanabilir wave css for html code googleda karşık renkler için -->
+		<br>
+		<ul type="circle">			<!--Madde işareti halinde yazı yazmak için istediğimi şekil olacak-->
+		<li>Gençlik</li> 
+		<li>Spor</li>
+		<li>Bakanlığı</li> 
+		</ul>
+
+		<br>
+
+		<ol> 			<!--sayılar halinde yazmak için-->
+		<li>Gençlik</li> 
+		<li>Spor</li>
+		<li>Bakanlığı</li> 
+		</ol>
+
+		<br>
+
+		<ol type="a">
+		<li>Gençlik</li> 
+		<li>Spor</li>
+		<li>Bakanlığı</li>
+		</ol>
+		<br>
+		<!--tablo kodları başlangıcı-->
+		<table border="5" width="500">
+			<tr> <!--sütunlar gösterir-->
+				<th>Sıra No</th> 	<!--Farklı Değerler Girilebilir-->
+				<th>Stok Adı</th>	<!--Farklı Değerler Girilebilir-->
+				<th>Stok Adeti</th>	<!--Farklı Değerler Girilebilir-->
+				
+			</tr>
+			<tr>
+				<td>3</td>			<!--Değerlere Uygun Bilgiler Girilebilir-->
+				<td>Elma</td>		<!--Değerlere Uygun Bilgiler Girilebilir-->
+				<td>100 Kasa</td>	<!--Değerlere Uygun Bilgiler Girilebilir-->
+			</tr>
+
+		</table>
+			<!--tablo kodları bitişi-->
+			<hr>
+
+
+		<form method="post" action="islem.php"> <!--form kodları başlangıcı-->
+				
+		<label for="Ad">Adınız Soyadınız</label>
+		<br>
+		<input type="text" id="Ad" name="Soyad" placeholder="Adınızı Giriniz" required=""> <!--göndermeyi zorunlu kılmak için-->
+		<br><br>
+		<label>Şifreniz</label>
+		<br>
+		<input type="password" name="sifre" placeholder="Şifrenizi Giriniz">
+		<br><br>
+		<label>E-Postanız</label>
+		<br>
+		<input type="Email" name="eposta">
+		<br><br>
+		<label>Doğum Tarihiniz</label>
+		<br>
+		<input type="date" name="dtarihi">
+		<br><br>
+		<label>BİYOGRAFİ</label>
+		<br>
+		<textarea name="bio" placeholder="Hakkınızda"></textarea>
+		<br><br>
+		<input type="submit" name="uyeformunugonder" value="Kaydı Gönder"> <!--Bu bölümde Kullanıcı Adı ve Şifreniz Kısmını yazıyoruz ve gönder dediğimizde php sitesine gönderiyor ancak o site daha tanımlı değil-->
+		
+		</form>
+	<!--form kodları bitişi-->
+
+	<div style="border:dotted 4px  black; float: left;"> <!--tüm yazıları bir çerçeveye alma-->
+		<div class="blok1">1.Blok</div> <!--1.ciyi çerçeveye alma padding geniişlik verme, blok1 ile cssden veri aldık içinin bilgileri cssde-->   
+		
+		<div style="border:dashed 3px blue; width: 250px; float: left; margin: 10px">2.Blok</div> <!--2.ciyi çerçeveye alma-->
+		<div style="clear left"></div>
+	
+			
+</body>
+</html>
